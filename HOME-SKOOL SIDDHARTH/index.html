@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .container{
+     width: 80%;
+     margin: auto;
+     background-color: bisque;
+ }
+
+ .container div{
+     width: 33%;
+     display: inline-block;
+     overflow: hidden;
+     margin: 10px;
+ }
+
+ .container img{
+     width: 100%;
+     transition: transform 1s ease-in-out;
+ }
+ 
+ .container img:hover{
+     transform: scale(1.2);
+ }
+ @media (max-width: 1200px ){
+         .container div{
+             width: 33%;
+             font-size: 20px;}
+           
+     
+     }
+     @media (max-width: 900px){
+         .container div{
+             width: 49%;
+             font-size: 15px;}
+          
+         
+     }
+     @media ( max-width: 600px){
+         .container div{
+             width: 90%;
+             font-size: 10px;}}
+</style>
+<body>
+    <div class="container">
+    <h1>The Gallery</h1>
+   <div>  <img src="./FLOWERS/flower.jpg" alt="">  </div>
+   <div>  <img src="./FLOWERS/flower 2.jpg" alt="" height="235px">  </div>
+   <div>  <img src="./FLOWERS/flower 3.jpg" alt="">  </div>
+   <div>  <img src="./FLOWERS/flower 4.jpg" alt="">  </div>
+   <div>  <img src="./FLOWERS/flower 5.jpg" alt="">  </div>
+   <div>  <img src="./FLOWERS/flower 6.jpg" alt="">  </div>
+</div>
+</body>
+</html>
